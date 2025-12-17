@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <title>Govoyage-afrifca | Home</title>
+</head>
+<body>
+    <main class="min-h-screen flex flex-col">
+    <!-- Navigation Bar -->
+    <nav class="border border-teal-600 text-teal-600 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-teal-600">Go Voyage Africa</h1>
+                </div>
+
+                <!-- Desktop Nav Links -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Home</a>
+                    <a href="booking.html" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Bookings</a>
+                    <a href="destinations.html" class="text-gray-700hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Destinations</a>
+                    <a href="#" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Packages</a>
+                    <a href="about.html" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">About</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Contact</a>
+                </div>
+
+                <!-- Social Icons and Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1"><i class="fab fa-twitter"></i></a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-teal-600 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="index.html" class="block text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Home</a>
+                    <a href="booking.html" class="block text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Bookings</a>
+                    <a href="destinations.html" class="block text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Destinations</a>
+                    <a href="#" class="block text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Packages</a>
+                    <a href="about.html" class="block text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">About</a>
+                    <a href="contact.html" class="block text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Contact</a>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="relative h-[70vh] flex items-center justify-center text-center text-white bg-gradient-to-r from-teal-700 to-teal-600 py-20 px-6 text-center">
+        <img src="https://res.cloudinary.com/dmnugpagw/image/upload/v1765929988/wlyqmltsaalcwff8d4tu.jpg" alt="African Travel" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/60"></div>
+
+        <div class="relative z-10 max-w-3xl px-6 space-y-6">
+            <h1 class="text-4xl md:text-6xl font-extrabold">Discover Africa With Confidence </h1>
+            <p class="text-lg text-teal-100 max-w-2xl mx-auto mt-4"> Go Voyage Africa is your trusted partner for unforgettable journeys, authentic experiences, and seamless travel across the continent. </p>
+        </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section class="py-20 px-6 bg-white md:px-12">
+        <div class="max-w-6xl mx-auto grid gap-12 md:grid-cols-2 items-center">
+            <div>
+                <h2 class="text-3xl text-gray-900 text-center md:text-4xl font-bold mb-4"> Who We Are </h2>
+                <p class="text-gray-600 mb-4 leading-relaxed">Go Voyage Africa is a destination-focused travel agency built on local expertise and a deep love for Africa’s culture, landscapes, and people. </p>
+                <p class="text-gray-600 leading-relaxed">From iconic landmarks to hidden gems, every destination we offer is carefully selected to deliver authentic, memorable experiences.</p>
+            </div>
+
+            <img src="https://res.cloudinary.com/dmnugpagw/image/upload/v1765929972/ovqtr6tm9uazrcdpjtzv.jpg" alt="Africa Destinations" class="rounded-xl shadow-lg">
+        </div>
+    </section>
+
+    <!-- How We Work -->
+    <section class="bg-gray-50 py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-14 bg-white rounded-xl shadow-md p-6 space-y-3 hover:shadow-lg transition">
+                <h2 class="text-3xl md:text-4xl font-bold"> How We Work </h2>
+                <p class="text-gray-600 mt-3"> A simple, transparent process designed around you </p>
+            </div>
+
+            <div class="grid gap-8 md:grid-cols-3">
+                <div class="bg-white p-6 rounded-xl shadow text-center bg-white rounded-xl shadow-md p-6 space-y-3 hover:shadow-lg transition">
+                    <i class="fas fa-search text-teal-600 text-3xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Explore</h3>
+                    <p class="text-gray-600"> Browse destinations, filter by country or category, and find  experiences that match your travel goals. </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow text-center bg-white rounded-xl shadow-md p-6 space-y-3 hover:shadow-lg transition">
+                    <i class="fas fa-calendar-check text-teal-600 text-3xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Plan & Customize</h3>
+                    <p class="text-gray-600"> Choose your package or request a custom itinerary tailored to your schedule and budget. </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow text-center bg-white rounded-xl shadow-md p-6 space-y-3 hover:shadow-lg transition">
+                    <i class="fas fa-plane-departure text-teal-600 text-3xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Travel With Ease</h3>
+                    <p class="text-gray-600"> We handle the logistics so you can focus on enjoying your journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Values -->
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">  Why Travelers Trust Us </h2>
+
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 mt-12">
+                <div class="bg-gray-50 border border-gray-200 rounded-xl">
+                    <i class="fas fa-shield-alt text-amber-600 text-3xl mb-3"></i>
+                    <h4 class="font-bold mb-1">Safety First</h4>
+                    <p class="text-gray-600 text-sm"> Trusted partners and reliable planning.</p>
+                </div>
+
+                <div class="bg-gray-50 border border-gray-200 rounded-xl">
+                    <i class="fas fa-map-marked-alt text-amber-600 text-3xl mb-3"></i>
+                    <h4 class="font-bold mb-1">Local Expertise</h4>
+                    <p class="text-gray-600 text-sm"> Deep knowledge of African destinations.</p>
+                </div>
+
+                <div class="bg-gray-50 border border-gray-200 rounded-xl">
+                    <i class="fas fa-headset text-amber-600 text-3xl mb-3"></i>
+                    <h4 class="font-bold mb-1">24/7 Support</h4>
+                    <p class="text-gray-600 text-sm"> Help whenever you need it. </p>
+                </div>
+
+                <div class="bg-gray-50 border border-gray-200 rounded-xl">
+                    <i class="fas fa-heart text-amber-600 text-3xl mb-3"></i>
+                    <h4 class="font-bold mb-1">Passion-Driven</h4>
+                    <p class="text-gray-600 text-sm"> We genuinely care about your experience. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="relative overflow-hidden py-20 px-6 text-white text-center bg-teal-700">
+        <img src="https://res.cloudinary.com/dmnugpagw/image/upload/v1765935491/dck0e1g8ge6kcnls5dsj.jpg" alt="Travel Background" class="absolute inset-0 w-full h-full object-cover">
+        <!--Soft Color Overlay-->
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-700/40 via-blue-600/30 to-blue-500/40"></div>
+        <div class="relative z-10 max-w-3xl mx-auto space-y-6">
+            <h2 class="text-white text-3xl font-bold md:text-4xl font-extrabold"> Let’s Plan Your Next Adventure </h2>
+            <p class="text-teal-100 mt-3"> Ready to explore Africa your way? Start planning today with Go Voyage Africa.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+                <a href="booking.html" class="bg-white text-teal-700 font-bold px-8 py-4 rounded-xl hover:bg-teal-100">  Plan My Trip</a>
+                <a href="contact.html" class="border bg-amber-500 text-white border-white px-8 py-4 rounded-xl hover:bg-amber-600"> Talk to an Expert </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-col justify-between items-center">
+                <p>&copy; 2024 Go Voyage Africa. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0 py-8 px-4 sm:px-6 lg:px-8">
+                    <a href="#" class="hover:text-blue-400 hover:teal-400"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </main>
+    <script src="/js/main.js"></script>
+</body>
+</html>

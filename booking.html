@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css"> 
+    <title>Govoyage-afrifca | booking</title>
+</head>
+<body>
+    <main class="min-h-screen flex flex-col">
+  <!-- Navigation Bar -->
+    <nav class="border border-teal-600 text-teal-600 bg-gray-50">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="flex justify-between h-16">
+                  <!-- Logo -->
+                  <div class="flex items-center">
+                      <h1 class="text-xl font-bold text-teal-600">Go Voyage Africa</h1>
+                  </div>
+
+                  <!-- Desktop Nav Links -->
+                  <div class="hidden md:flex items-center space-x-8">
+                      <a href="index.html" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Home</a>
+                      <a href="booking.html" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Bookings</a>
+                      <a href="destinations.html" class="text-gray-700hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Destinations</a>
+                      <a href="#" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Packages</a>
+                      <a href="about.html" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">About</a>
+                      <a href="contact.html" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Contact</a>
+                  </div>
+
+                  <!-- Social Icons and Buttons -->
+                  <div class="hidden md:flex items-center space-x-4">
+                      <a href="#" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1"><i class="fab fa-whatsapp"></i></a>
+                      <a href="#" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1"><i class="fab fa-facebook"></i></a>
+                      <a href="#" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1"><i class="fab fa-twitter"></i></a>
+                  </div>
+
+                  <!-- Mobile menu button -->
+                  <div class="md:hidden flex items-center">
+                      <button id="mobile-menu-button" class="text-gray-700 hover:text-teal-600 focus:outline-none">
+                          <i class="fas fa-bars"></i>
+                      </button>
+                  </div>
+              </div>
+
+              <!-- Mobile Menu -->
+              <div id="mobile-menu" class="md:hidden hidden">
+                  <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                      <a href="index.html" class="block text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Home</a>
+                      <a href="booking.html" class="block text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Bookings</a>
+                      <a href="destinations.html" class="block text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Destinations</a>
+                      <a href="#" class="block text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Packages</a>
+                      <a href="about.html" class="block text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">About</a>
+                      <a href="contact.html" class="block text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1">Contact</a>
+                      <div class="flex space-x-4 mt-4">
+                          <a href="#" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1"><i class="fab fa-whatsapp"></i></a>
+                          <a href="#" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1"><i class="fab fa-facebook"></i></a>
+                          <a href="#" class="text-gray-700 hover:text-teal-600 active:bg-teal-100 text-teal-700 rounded-md px-2 py-1"><i class="fab fa-twitter"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </nav>
+    <!--Booking Hero Section-->
+    <section class="relative bg-gray-50 text-white py-16 px-6 md:px-12 text-center">
+        <img src="https://res.cloudinary.com/dmnugpagw/image/upload/v1765929975/q0fwsarx6csgzc9fama3.jpg" class="absolute inset-0 w-full h-full object-cover opacity-30" alt=""/>
+        <div class="relative max-w-3xl mx-auto">
+            <h1 class="text-3xl text-gray-900 font-bold md:text-5xl text-center mb-4 font-extrabold"> Plan Your African Journey </h1>
+            <p class="mt-5 text-center max-w-2xl mx-auto mb-6 text-gray-600"> Custom trips, trusted guides, unforgettable experiences. </p>
+        </div>
+    </section>
+
+    <section class="py-12 px-6 md:px-12 max-w-7xl mx-auto bg-white">
+      <h2 class="text-gray-900 font-bold text-3xl md:text-4xl text-2xl font-bold text-center mb-6"> What Type of Trip Are You Planning? </h2>
+
+      <div id="tripTypeOptions" class="grid md:grid-cols-3 gap-8">
+          <button class="trip-card" data-type="Custom Trip">
+            <span class="text-4xl">🌍</span>
+            <h3 class="mt-4 text-xl font-bold">Custom Trip</h3>
+            <p class="text-gray-600 mt-2">Tailored just for you</p>
+          </button>
+          <button class="trip-card" data-type="Group Tour">
+            <span class="text-4xl">🧭</span>
+            <h3 class="mt-4 text-xl font-bold">Group Tour</h3>
+            <p class="text-gray-600 mt-2">Travel with others</p>
+          </button>
+          <button class="trip-card" data-type="Luxury Experience">
+            <span class="text-4xl">💎</span>
+            <h3 class="mt-4 text-xl font-bold">Luxury Experience</h3>
+            <p class="text-gray-600 mt-2">Premium comfort & style</p>
+          </button>
+      </div>
+    </section>
+
+    <section class="pb-20 px-6 max-w-5xl mx-auto">
+      <form id="bookingForm" class="bg-gray-50 shadow-lg rounded-xl p-10 space-y-8 md:p-10 hover:shadow-xl transition-shadow duration-300">
+          <input type="hidden" id="tripType" />
+          <div class="gap-6 md:gap-8 grid grid-cols-1 md:grid-cols-2">
+              <input class="form-input bg-white border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-teal-500 focus:outline-none text-gray-800 h-12" placeholder="Full Name" required />
+              <input class="form-input bg-white border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-teal-500 focus:outline-none text-gray-800 h-12" type="email" placeholder="Email Address" required />
+          </div>
+          <div class="grid md:grid-cols-2 gap-6">
+              <select id="destinationSelect" class="form-input bg-white border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-teal-500 focus:outline-none text-gray-800 h-12" required>
+                  <option value="">Select Destination</option>
+              </select>
+              <input class="form-input bg-white border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-teal-500 focus:outline-none text-gray-800 h-12" type="date" required />
+          </div>
+        <div class="grid md:grid-cols-2 gap-6">
+            <input class="form-input bg-white border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-teal-500 focus:outline-none text-gray-800 h-12" type="number" min="1" placeholder="Travelers" />
+            <select class="form-input bg-white border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-teal-500 focus:outline-none text-gray-800 h-12">
+                <option value="">Budget Range</option>
+                <option>$500 – $1,000</option>
+                <option>$1,000 – $3,000</option>
+                <option>$3,000+</option>
+            </select>
+        </div>
+        <textarea cols="30" rows="5" class="form-input bg-white border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-teal-500 focus:outline-none text-gray-800" placeholder="Describe your dream trip..."></textarea>
+
+        <button id="submitBtn" class="w-full col-span-full text-center bg-teal-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg text-lg font-bold hover:bg-teal-700 hover:scale-105 transition mt-4 md:mt-6">
+          Submit Booking Request
+        </button>
+
+        <p id="formStatus" class="text-center bg-teal-100 text-teal-800 rounded-lg p-4 mb-6 text-sm hidden"></p>
+      </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-col justify-between items-center">
+                <p>&copy; 2024 Go Voyage Africa. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0 py-8 px-4 sm:px-6 lg:px-8">
+                    <a href="#" class="hover:text-blue-400 hover:teal-400"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </main>
+    <script src="/js/main.js"></script>
+    <script type="module" src="/js/booking.js"></script>
+</body>
+</html>
